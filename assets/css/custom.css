@@ -1,9 +1,9 @@
-	
+
 /* -- Standard Adjustments -- */
 
 /* Primary Color - Base */
-h1, h2, h3, h4, h5, h6, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-nav-header, .uk-article-title, .uk-pagination > li > a, .home-template .uk-panel-title, .uk-nav-navbar > li > a { 
-	color: #3d4549;
+h1, h2, h3, h4, h5, h6, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-nav-header, .uk-article-title, .uk-pagination > li > a, .home-template .uk-panel-title, .uk-nav-navbar > li > a {
+	color: #3a7d7e;
 }
 
 /* Secondary Color - Highlights */
@@ -15,11 +15,11 @@ h1, h2, h3, h4, h5, h6, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-nav-
 .uk-article .uk-article-meta time,
 .uk-article .uk-article-meta,
 .uk-article .uk-button {
-    color: #6f7c82;	
+    color: #6f7c82;
 }
 
 /* Header Font - Insert Preferred Google Font Here */
-.uk-navbar-brand, .uk-article-title, .uk-article-meta, .uk-modal-caption, .uk-button, input.uk-button, .uk-pagination > li > a, .uk-thumbnav .uk-overlay-panel .uk-h4, .dropcap:first-letter, .dropcap p:first-child:first-letter { 
+.uk-navbar-brand, .uk-article-title, .uk-article-meta, .uk-modal-caption, .uk-button, input.uk-button, .uk-pagination > li > a, .uk-thumbnav .uk-overlay-panel .uk-h4, .dropcap:first-letter, .dropcap p:first-child:first-letter {
 	letter-spacing: -0.01em;
 	font-family: 'Montserrat', arial, verdana, sans-serif;
 }
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-nav-
    	min-height: 240px;
 	max-height: 300px;
 	background-origin: border-box;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.1) inset, 0 0 1px -2px rgba(0, 0, 0, 0.4) inset;
 }
 .postcover .uk-overlay-background {
@@ -159,4 +159,3 @@ article ul.uk-thumbnav li .uk-overlay-panel p {
 	line-height: 1.1em;
 }
 }
-
