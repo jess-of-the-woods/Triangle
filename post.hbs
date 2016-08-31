@@ -16,9 +16,9 @@
 		</p>
 	</div>
 	</div>
-</div>	
-{{/if}}	
-	
+</div>
+{{/if}}
+
 <div class="uk-clearfix shade1">
 <article class="uk-width-1-1 uk-width-small-9-10 uk-width-medium-8-10 uk-width-large-7-10 uk-container uk-container-center uk-margin-large-top uk-margin-large uk-article uk-clearfix {{post_class}}" role="main">
 
@@ -29,13 +29,13 @@
 		<time datetime="{{date published_at format='YYYY-MM-DD'}}" content="{{date published_at format='YYYY-MM-DD'}}">
 	    {{date published_at format='MMMM, DD YYYY'}}
 		</time>
-	</p>	
-{{/if}}	
+	</p>
+{{/if}}
 
 <div class="dropcap">
 	{{content}}
 </div>
-                
+
 <p class="uk-text-center uk-margin-large">
 	{{#foreach tags}}<a href="/tag/{{slug}}" title="{{name}}" class="uk-button uk-margin-small-right">
 		{{name}}<i class="uk-icon-tag uk-margin-left uk-text-muted"></i></a>
@@ -67,32 +67,32 @@
 {{/author}}
 
 <hr class="uk-article-divider uk-margin-large-bottom" />
-     
+
 <h6 class="uk-h4 uk-display-inline">Additional Posts</h6><i class="uk-icon-bookmark uk-text-primary uk-icon-mini uk-float-right" data-uk-scrollspy="{cls:'uk-animation-fade'}"></i>
 <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-width-1-1 uk-small-width-3-4 uk-margin">
-	<ul class="uk-thumbnav uk-grid-width-1-1 uk-grid-width-medium-1-2 uk-contrast" data-uk-grid-match="{target:'.uk-overlay-fade'}">	
+	<ul class="uk-thumbnav uk-grid-width-1-1 uk-grid-width-medium-1-2 uk-contrast" data-uk-grid-match="{target:'.uk-overlay-fade'}">
 
 	{{#next_post}}
 	<li><a href="{{url}}" title="{{title}}" class="uk-overlay uk-overlay-hover uk-text-left uk-panel-box uk-padding-remove">
 		{{#if image}}<img src="{{image}}" alt="{{title}}" title="{{title}}" class="uk-overlay-fade" />
-		{{else}}<img src="{{@blog.cover}}" alt="{{@blog.title}}" title="{{@blog.title}}" class="uk-overlay-fade" />{{/if}}								
+		{{else}}<img src="{{@blog.cover}}" alt="{{@blog.title}}" title="{{@blog.title}}" class="uk-overlay-fade" />{{/if}}
 		<div class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-column">
 		<div class="uk-h4 uk-text-primary">{{title}}<i class="uk-icon-caret-left uk-icon-small uk-float-left uk-margin-right"></i></div>
-		<p class="uk-margin-small-top uk-text-small">{{excerpt words="20"}}&hellip;</p></div></a></li>	      
+		<p class="uk-margin-small-top uk-text-small">{{excerpt words="20"}}&hellip;</p></div></a></li>
 	{{else}}
 	<li><a href="{{url}}" title="{{title}}" class="uk-overlay uk-overlay-hover uk-text-left uk-panel-box uk-padding-remove">
 		<img src="{{@blog.cover}}" alt="{{@blog.title}}" title="{{@blog.title}}" class="uk-overlay-fade" />
 		<div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-column uk-flex-middle">
 		<i class="uk-icon-home uk-icon-large"></i><span class="uk-h4 uk-text-muted">{{@blog.title}}</span></div></a></li>
 	{{/next_post}}
-	
+
 	{{#prev_post}}
 	<li><a href="{{url}}" title="{{title}}" class="uk-overlay uk-overlay-hover uk-text-right uk-panel-box uk-padding-remove">
 		{{#if image}}<img src="{{image}}" alt="{{title}}" title="{{title}}" class="uk-overlay-fade" />
-		{{else}}<img src="{{@blog.cover}}" alt="{{@blog.title}}" title="{{@blog.title}}" class="uk-overlay-fade" />{{/if}}								
+		{{else}}<img src="{{@blog.cover}}" alt="{{@blog.title}}" title="{{@blog.title}}" class="uk-overlay-fade" />{{/if}}
 		<div class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-column">
 		<div class="uk-h4 uk-text-primary">{{title}}<i class="uk-icon-caret-right uk-icon-small uk-float-right uk-margin-left"></i></div>
-		<p class="uk-margin-small-top uk-text-small">{{excerpt words="20"}}&hellip;</p></div></a></li>	      
+		<p class="uk-margin-small-top uk-text-small">{{excerpt words="20"}}&hellip;</p></div></a></li>
 	{{else}}
 	<li><a href="{{url}}" title="{{title}}" class="uk-overlay uk-overlay-hover uk-text-right uk-panel-box uk-padding-remove">
 		<img src="{{@blog.cover}}" alt="{{@blog.title}}" title="{{@blog.title}}" class="uk-overlay-fade" />
@@ -102,17 +102,37 @@
 
 	</ul>
 </div>
-	
+
 <section class="uk-text-center uk-margin-large-bottom">
 	<h6 class="uk-h5 uk-text-muted uk-margin uk-margin-large-top" data-uk-scrollspy="{cls:'uk-animation-fade',delay:600}">Share This Post</h6>
 	<a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter" class="uk-animation-hover uk-margin-right" target="_blank" rel="nofollow"><i class="uk-icon-twitter uk-icon-large uk-animation-reverse uk-animation-scale"></i><span class="uk-hidden">Twitter</span></a>
 	<a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+" class="uk-animation-hover uk-margin-right" target="_blank" rel="nofollow"><i class="uk-icon-google-plus uk-icon-large uk-animation-reverse uk-animation-scale"></i><span class="uk-hidden">Google+</span></a>
-	<a href="https://pinterest.com/pin/create/button/?url={{url absolute="true"}}&amp;media={{encode image}}&amp;description={{encode description}}" title="Share on Pinterest" class="pin-it-button uk-animation-hover uk-margin-right" target="_blank" rel="nofollow"><i class="uk-icon-pinterest uk-icon-large uk-animation-reverse uk-animation-scale"></i><span class="uk-hidden">Pinterest</span></a>		
+	<a href="https://pinterest.com/pin/create/button/?url={{url absolute="true"}}&amp;media={{encode image}}&amp;description={{encode description}}" title="Share on Pinterest" class="pin-it-button uk-animation-hover uk-margin-right" target="_blank" rel="nofollow"><i class="uk-icon-pinterest uk-icon-large uk-animation-reverse uk-animation-scale"></i><span class="uk-hidden">Pinterest</span></a>
 	<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook" class="uk-animation-hover" target="_blank" rel="nofollow"><i class="uk-icon-facebook uk-icon-large uk-animation-reverse uk-animation-scale"></i><span class="uk-hidden">Facebook</span></a>
 </section>
 
 <!-- {{> disqus}} -->
-			
+<div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+
+var disqus_config = function () {
+    this.page.url = '{{url absolute="true"}}';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'ghost-{{id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//offthemat.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 </article>
 </div>
 
