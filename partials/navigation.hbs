@@ -7,21 +7,22 @@
 {{else}}
 	<a href="{{@blog.url}}" title="{{@blog.title}}" class="uk-navbar-brand">{{@blog.title}}</a>
 {{/if}}
-<div class="uk-navbar-flip">	
+<div class="uk-navbar-flip">
 	<ul class="uk-navbar-nav">
 	{{#foreach navigation}}
     	<li class="{{#if current}} uk-active{{/if}} uk-hidden-small" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
+			<li class="{{#if current}} uk-active{{/if}} uk-hidden-small" role="presentation"><a href='/about-us'>About us</a></li>
 	{{/foreach}}
 		<li class="uk-parent uk-visible-small" data-uk-dropdown>
 		<a class="uk-animation-hover" data-uk-dropdown="{mode:'click'}"><i class="uk-icon-bars uk-animation-reverse uk-animation-scale uk-text-muted"></i></a>
 		<div class="uk-dropdown uk-dropdown-navbar">
-		<ul class="uk-nav uk-nav-navbar uk-text-center">    
+		<ul class="uk-nav uk-nav-navbar uk-text-center">
 		{{#foreach navigation}}
 		<li role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
 		{{/foreach}}
 		</ul>
 		</div>
-		</li>	
+		</li>
 	</ul>
 </div>
 </nav>
