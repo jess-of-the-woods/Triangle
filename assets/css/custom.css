@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-nav-
 	padding-right: 15%;
 }
 .postcover p, .postcover p a, .postcover h2 {
-	font-size: 14px;
+	font-size: 20px;
 	color: rgba(255,255,255,0.8);
 	font-weight: 400;
 }
